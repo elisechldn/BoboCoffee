@@ -5,7 +5,7 @@
 
 /*NavBar*/
  nav {
-    top: 5rem;
+    top: 1.3rem;
     position: relative;
     display: flex;
     width: 100%;
@@ -99,7 +99,7 @@ ul li:hover{
     div.menu {
         position: fixed;
         left: -100%;
-        top: 8.75rem;
+        top: 5.05rem;
         width: 40%;
         text-align: center;
         transition: 0.25s;
