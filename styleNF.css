@@ -1,0 +1,344 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #e0c097;
+}
+
+
+/* NavBar */
+
+nav {
+    top: 5rem;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 3.75rem;
+    background-color:  #493A3A;
+}
+
+.icons {
+    cursor: pointer;
+    display: none;
+}
+
+.centerCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -3.6rem;
+    margin-top: -2.8rem;
+    background-color: #E0C097;
+    width: 7.2rem;
+    height: 9.3rem;
+    border-radius: 50%;
+}
+
+.logo {
+    height: 6.25rem;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style:none;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 50%;
+}
+ul.menuLeft{
+    padding-right: 2.5rem;
+}
+
+ul.menuRight{
+    padding-left: 2.5rem;
+ 
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #E0C097;
+}
+
+ul li:hover{
+    background-color: #B85C38;
+    color: #5C3D2E;
+} 
+
+
+
+/* Bouton langue */
+
+.bouton {
+    box-shadow: 0px 0px 10px 1px #000000;
+    border-radius: 50%;
+    border: none;
+    width: 45px;
+    height: 45px;
+    /* text-align: center; */
+    color: white;
+    display: block;
+}
+
+
+
+/* Footer */ 
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    padding: 5px;
+    background-color: #493A3A;
+    color: #fff;
+    text-decoration: none;
+}
+.jenesaispaslaquelle {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+footer li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* .list {
+    width: 25%;
+    border-right: 2px solid #f1efef;
+    display: inline-block;
+    height: 70px;
+    margin: 0 20px;
+} */
+
+.logofooter img {
+    width: 6.25rem;
+    
+}
+
+.logofooter {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.trait {    
+    border-right: 2px solid #f1efef;
+    display: inline-block;
+    height: 70px;
+    margin: 0 20px;    
+}
+
+.réseau {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+
+    }
+
+.mailFooter {
+   padding-left: 0.5rem;
+}
+
+
+.iconeMail {  
+    display: flex;  
+    height: 2.5rem;
+    width: 2.5rem;       
+}
+
+
+.iconeRéseau {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: white;
+    
+}
+
+.flexiconeréseau {
+    display: flex;
+    fill: white;
+}
+
+
+  
+.mention {
+    
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+   
+}
+
+h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.horaires {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+    
+
+    .réseau, h6 {
+        flex-direction: row;
+        gap: 20rem;
+        font-size: 2rem;
+    }
+
+    .flexiconeréseau {
+        display: flex;
+        justify-content: space-around;
+        fill: white;
+        gap: 1.5rem;
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+}
+@media screen and (max-width: 768px){
+
+    .carousel {
+        display: none;
+    }
+
+    
+
+    /* NavBar Burger mode */
+
+    
+@media screen and (max-width: 768px){
+    .icons{
+        display: block;
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+        font-size: 2rem;
+        color: #E0C097;
+
+    }
+
+    .icons:before {
+        content: "\2630";
+    }
+
+    .active .icons:before{
+        content:"\2715";
+    }
+
+    div.menu {
+        position: fixed;
+        left: -100%;
+        top: 8.75rem;
+        width: 40%;
+        text-align: center;
+        transition: 0.25s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav.active div.menu {
+        left: 0;
+    }
+
+    div.menu ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding: 0;
+    }
+
+    ul li{
+        background-color:#B85C38;
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    ul li a {
+        width: 100%;
+
+    }
+
+    ul li:hover{
+        background-color: #493A3A;
+    }
+
+}
+
+
+
+
+    /* Footer Mobile Mode */
+
+
+
+
+
+
+
+}
