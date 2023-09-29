@@ -1,0 +1,50 @@
+/* SECTION */
+
+.section{
+    height: 100% ;
+    width: 100%;
+  }
+  .section div {
+    width: 100%;
+  }
+  .menu{
+    z-index: 5;
+    position: absolute;
+  }
+  
+  h1 {
+    margin-top: 3.4rem;
+    margin-left: 8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  
+  main {
+    margin-top: 5px;
+    height: 100% ;
+  }
+  
+  main section {
+    max-width: 100%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  main .section button {
+    background-color: #bebebe;
+    border-radius: 10px;
+    box-shadow: 4px 10px px 0px #bebebe;
+    align-items: center;
+    width: 40%;
+    margin-top: 1rem;
+    margin-left: 8rem;;
+    height: 6rem;
+  }
+  main .section button h2{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  main .section button img {
+    height: 45%;
+  }
