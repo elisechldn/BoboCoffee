@@ -24,5 +24,12 @@
          </button>
         </div>
 
+        <div class="nosboutons">
+         <button class= "darkmodebtn"></button>
+         <button class="language"><a href="aboutus_en.php">
+            <img src="assets/france-uk-cut-round.svg"  class="image"></a>
+         </button>
+        </div>
+
 
 </nav>
