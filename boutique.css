@@ -1,0 +1,265 @@
+:root{
+    --primary:#493A3A;
+    --secondary: #E0C097;
+    --tertiary:#B85C38;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+*{-ms-overflow-style: none;
+}
+
+*{
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent;
+  
+  scrollbar-width: 0px;
+  
+  }
+
+main{
+    width: 100%;
+    margin:auto;
+    margin-top: 2em;
+}
+
+h2:before, h2:after {
+  content:'';
+  width:3.5em;
+  border-bottom:#ffff solid;
+  opacity:0.3;
+  display:inline-block;
+  vertical-align:middle;
+}
+h2:before {
+  margin-left:-100%;
+margin-right:3em;
+}
+
+h2:after {
+  margin-right:-100%;
+margin-left:3em;
+}
+
+/*Présentation de la boutique*/
+.shopIntro{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/3.png);
+    background-size: cover;
+    opacity:0.5;
+    width: 100%;
+}
+
+.shopIntro h1{
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.shopText{
+    text-align:center;
+    padding: 3rem;
+    color: var(--secondary);
+    font-size: 1.5em;
+  }
+
+section > h2{
+    margin-top: 1em;
+    margin-bottom:1em;
+    text-align:center;
+    font-size: 2em;
+    color: var(--primary);
+}
+
+/*Carrousel structure*/
+
+.slider-container-slider-1 {
+    width:100%;
+    margin: auto;
+    overflow: hidden;
+    border: none;
+    background-color: var(--tertiary);/*#5C3D2E*/
+}
+
+.slider-container-slider-1 .slider {
+    display: flex;
+    animation: slider-container-slider-1 10s infinite ease-in-out;
+}
+
+.slider p{
+    padding:2rem;
+    width: 100%;
+    font-size:2em;
+    text-align: center;
+    flex-shrink: 0;
+    color: var(--secondary);
+}
+
+.background-text{
+    position: absolute;
+    color:var(--secondary);
+}
+
+@keyframes slider-container-slider-1 {
+    0%,
+    25% {
+        transform: translateX(0);
+    }
+    30%,
+    55% {
+        transform: translateX(-100%);
+    }
+    60%,
+    85% {
+        transform: translateX(-200%);
+    }
+    90%,
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+/*grid dernière section*/
+
+.wrapper {
+    height: 420px;
+    width: 654px;
+    margin: 50px auto;
+    border-radius: 7px 7px 7px 7px;
+    /* VIA CSS MATIC https://goo.gl/cIbnS */
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-img {
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  
+  .product-img img {
+    border-radius: 7px 0 0 7px;
+  }
+  
+  .product-info {
+    float: left;
+    height: 100%;
+    width: 50%;
+    border-radius: 0 7px 10px 7px;
+    background-color: #ffffff;
+  }
+  
+  .product-text {
+    height: 300px;
+    width: 327px;
+  }
+  
+  .product-text h1 {
+    margin: 0 0 0 38px;
+    padding-top: 52px;
+    font-size: 2em;
+    color: var(--primary);
+  }
+  
+  .product-text p {
+    height: 18vh;
+    margin: 0 5px 0 38px;
+    padding-right:5px;
+    color: #8d8d8d;
+    line-height: 1.7em;
+    font-size: 1em;
+    font-weight: lighter;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+    }
+  
+  .product-price-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 103px;
+    width: 20.40rem;
+    margin-top: 17px;
+  }
+  
+  .product-price-btn p {
+    height: 50px;
+    font-size: 1.86em;
+    font-weight: lighter;
+    color: #474747;
+  }
+  
+  span {
+    display: inline-block;
+    height: 50px;
+    padding: 0.5rem;
+  }
+  
+  .product-price-btn button {
+    float: right;
+    display: block;
+    height: 50px;
+    width: 176px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: var(--tertiary);
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .product-price-btn button:hover {
+    background-color: #540b0e;
+  }
+
+/* Pour media queries : 
+shop intro :
+Reste à centrer un peu plus la division. 
+*/
+
+@media screen and (min-width:900px) {
+
+    .shopIntro h1{
+        margin-bottom: 1.5rem;
+        font-weight:700;
+        font-size: 3em;
+    }
+
+    .shopText{
+        width: 50%;
+        margin: auto;
+        font-weight:500;
+        font-size: 1.5em;
+        opacity:1;
+    }
+
+    section>h2{
+      font-weight:700;
+      font-size:2em;
+    }
+
+    .wrapper{
+      margin: 20px;
+    }
+}
