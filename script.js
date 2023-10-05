@@ -27,14 +27,28 @@ darkmode.addEventListener("click", function () {
 const message =
   "Merci d'avoir soumis votre demande. \nL'équipe Bobo Coffee y répondra très prochainement";
 
-function messageFR(){
+function messageFRContact(){
     alert(message);
 } 
 
   const message_EN =
   "Thank you for submitting your request.\nThe Bobo Coffee crew will respond shortly.";
 
-  function messageEN(){
+  function messageENContact(){
     alert(message_EN);
 } 
 
+
+const message =
+  "Merci d'avoir réservé chez nous.";
+
+function messageFR(){
+    alert(message);
+} 
+
+  const message_EN =
+  "Thanks for your reservation.";
+
+  function messageENResevation(){
+    alert(message_EN);
+}
