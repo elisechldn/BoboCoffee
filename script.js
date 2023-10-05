@@ -23,3 +23,17 @@ darkmode.addEventListener("click", function () {
         element.classList.toggle("darkmode");
     }) 
 });
+
+const message =
+  "Merci d'avoir réservé chez nous.";
+
+function messageFR(){
+    alert(message);
+} 
+
+  const message_EN =
+  "Thanks for your reservation.";
+
+  function messageEN(){
+    alert(message_EN);
+}

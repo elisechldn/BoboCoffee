@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+main {
+    width: 65%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #493A3A;
+    padding: 5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #e0c097;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.identite {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.identite div {
+    display: flex;
+    flex-direction: column;
+    width: 49%;   
+}
+
+.infos {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.infos div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;   
+}
+
+.infos div input, .infos div select, .infos div option {
+    color: #493A3A;
+}
+
+.contactclients {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contactclients div {
+    display: flex;
+    flex-direction: column;
+    width: 49%;   
+}
+
+.message {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.message div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;   
+}
+
+.message input {
+    height: 7rem;
+}
+
+label {
+    margin-bottom: 0.2rem;
+}
+
+input, select {
+    margin-bottom: 5px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+
+}
+
+
+input:focus {
+    border: 1px solid; /*couleur fond */
+}
+
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 2rem;
+    width: 4rem;
+    background-color: #e0c097;
+    color: #2d2424;
+    border-radius: 7px;
+    border: none;
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+  
+.bouton:hover {
+    background-color: #B85C38;
+    transition: background-color 0.15s;
+}
+  
+.bouton:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+  
+
+
+
+  /*Media Query*/
+@media screen and (max-width: 1110px) {
+    
+    main {
+        width: 90%;
+    }
+
+    form {
+        padding: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width: 632px) {
+
+    .infos {
+        display: block;
+    }
+    
+    .infos > div {
+        width: 100%;       
+    }
+
+    input {
+        height: 2rem;
+        font-size: larger;
+    }
+
+    select, option {
+        height: 3rem;
+        font-size: larger;
+    }
+
+    label {
+        font-size: larger;
+    }
+
+    .message {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 566px) {
+    .infos, .identite, .contactclients {
+        display: block;
+    }
+    
+    .infos > div, .identite > div, .contactclients > div {
+        width: 100%;
+        
+    }
+
+    input {
+        height: 2rem;
+        font-size: larger;
+    }
+
+    select, option {
+        height: 3rem;
+        font-size: larger;
+    }
+
+    label {
+        font-size: larger;
+    }
+
+    .message {
+        margin-top: 0;
+    }
+    
+  }
