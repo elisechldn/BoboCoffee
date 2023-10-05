@@ -11,16 +11,18 @@ links.forEach((link) => {
     });
 });
 
+
+// test bouton dark mode
+
 const darkmode = document.querySelector(".darkmodebtn");
 
 
 darkmode.addEventListener("click", function () {
     document.body.classList.toggle("darkmode");
-    document.querySelectorAll("input, select, .centerCircle, .darkmodebtn").forEach (element => {
+    document.querySelectorAll("input, select, .centerCircle, .darkmodebtn, .motdefin, .profilEquipe h1, footer").forEach (element => {
         element.classList.toggle("darkmode");
     }) 
 });
-
 
 const message =
   "Merci d'avoir réservé chez nous.";
