@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles/style.css"> 
 </head>
 <body>
-    <?php 
+    <!-- <?php 
         include 'navbar.php'
-    ?>
+    ?> -->
 </body>
 <script src="script.js"></script>
 </html>

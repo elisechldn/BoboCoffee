@@ -1,19 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #e0c097;
+    background-color: #e0c097;     
+    min-height: 100%;
+}
+
+html{
+    height : 100%; 
 }
 
 
-/* NavBar */
 
-nav {
-    top: 5rem;
+/*Test NavBar*/
+
+.darkmode {
+    background-color: #493A3A !important;    
+}
+
+
+ nav {
+    z-index: 3;
+    top: 1.3rem;
     position: relative;
     display: flex;
     width: 100%;
@@ -85,43 +100,70 @@ ul li:hover{
     color: #5C3D2E;
 } 
 
+/* Boutons */
 
-
-/* Bouton langue */
-
-.bouton {
-    box-shadow: 0px 0px 10px 1px #000000;
-    border-radius: 50%;
-    border: none;
-    width: 45px;
-    height: 45px;
-    /* text-align: center; */
-    color: white;
-    display: block;
+body.darkmode {
+    background-color: #c8ad7f;
 }
 
+input.darkmode {
+    background-color: #3e3e3e;
+    color: white;
+}
 
+select.darkmode {
+    background-color: #3e3e3e;
+    color: white;
+}
+
+.darkmodebtn::after {
+    content: "🌑";
+  }
+
+.darkmodebtn.darkmode::after {
+    content: "☀️";
+  }
+
+.centerCircle.darkmode {
+    background-color: #c8ad7f;
+}
+
+.darkmodebtn {
+    width: 100%;
+    font-size: 2rem;
+}
+
+.motdefin.darkmode {
+    color: #e0c097;
+}
+
+.profilEquipe h1.darkmode {
+    color: #e0c097;
+}
+
+footer.darkmode {
+    border-top: 2px solid #fff;
+}
 
 /* Footer */ 
 
 footer {
-    position: absolute;
-    width: 100%;
+    position: relative;
     bottom: 0;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
+    margin-top: 5rem;   
+    width: 100%;    
     padding: 5px;
     background-color: #493A3A;
-    color: #fff;
+    color: #e0c097;
     text-decoration: none;
 }
-.jenesaispaslaquelle {
+
+
+.jenesaispaslaquelle {    
     display:flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-
 }
 
 footer li a {
@@ -132,30 +174,13 @@ footer li a {
 
 }
 
-/* .list {
-    width: 25%;
-    border-right: 2px solid #f1efef;
-    display: inline-block;
-    height: 70px;
-    margin: 0 20px;
-} */
 
-.logofooter img {
-    width: 6.25rem;
-    
-}
-
-.logofooter {
-    
-    display: flex;
-    justify-content: center;
-}
 
 .trait {    
     border-right: 2px solid #f1efef;
     display: inline-block;
-    height: 70px;
-    margin: 0 20px;    
+    height: 4.375rem;
+        
 }
 
 .réseau {
@@ -163,24 +188,30 @@ footer li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 30%;    
+    border-left: 2px solid #f1efef;    
+    height: 4.375rem;
+
 }
 
 .mail {
     display: flex;
     align-items: center;
-
+    width: 30%;
+    justify-content: center;    
     }
 
 .mailFooter {
    padding-left: 0.5rem;
+   font-size: 1.5rem;
 }
 
 
 .iconeMail {  
     display: flex;  
-    height: 2.5rem;
-    width: 2.5rem;       
+    height: 2rem;
+    width: 2rem;
+    padding-bottom: 0.4rem;       
 }
 
 
@@ -191,86 +222,44 @@ footer li a {
     
 }
 
-.flexiconeréseau {
-    display: flex;
-    fill: white;
-}
-
-
   
-.mention {
-    
+.mention {    
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-   
+    gap: 1.5rem;   
 }
 
-h6 {
+h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;    
 }
 
 .horaires {
-    width: 18%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-right: 2px solid #f1efef;
+    height: 4.375rem;     
+}
+
+
+.flexiconeréseau {
+    display: flex;
+    justify-content: space-around;
+    fill: white;
+    gap: 1.5rem;
 }
 
 
 
 
+/*Media Query*/
 
-
-
-@media screen and (min-width: 768px){
-
-    
-
-    .réseau, h6 {
-        flex-direction: row;
-        gap: 20rem;
-        font-size: 2rem;
-    }
-
-    .flexiconeréseau {
-        display: flex;
-        justify-content: space-around;
-        fill: white;
-        gap: 1.5rem;
-    }
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-}
-@media screen and (max-width: 768px){
-
-    .carousel {
-        display: none;
-    }
-
-    
-
-    /* NavBar Burger mode */
-
-    
 @media screen and (max-width: 768px){
     .icons{
         display: block;
@@ -292,7 +281,7 @@ h6 {
     div.menu {
         position: fixed;
         left: -100%;
-        top: 8.75rem;
+        top: 5.05rem;
         width: 40%;
         text-align: center;
         transition: 0.25s;
@@ -328,17 +317,47 @@ h6 {
         background-color: #493A3A;
     }
 
-}
 
+     /* Footer media */
 
+    .mail {
+        width: 50%;
+        border-right: 2px solid #f1efef;
+    }
 
+    .mail h4 {
+        display: none;        
+    }
 
-    /* Footer Mobile Mode */
+    .iconeMail {
+        height: 2.5rem;
+    width: 2.5rem;
+    padding: 0;
+    }
 
+    .jenesaispaslaquelle{
+        display: flex;
+        justify-content: space-around;
+    }
 
+    .horaires {
+        display: none;
+        width: 50%;
+    }
 
+    .réseau {        
+        width: 50%;
+        border-left: none;             
+    }
 
+    .flexiconeréseau {
+        display: flex;
+        gap: 0.8rem;
+    }
 
-
+    .réseau h4 {
+        display: none;
+    }
+       
 
 }
