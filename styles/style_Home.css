@@ -1,0 +1,301 @@
+/* Header */
+header{
+    position: relative;
+    width: 100%;
+    margin: 2.6rem 0;
+    color: white;
+}
+
+header img{
+    filter: brightness(40%);
+    width: 100%;
+	min-height: 25rem;
+
+}
+
+header div.header_text {
+    position: absolute;
+    top: calc(0.5rem + 15vw);
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
+
+header div.header_text h1 {
+    font-size: calc(2.5rem + 1.5vw);
+
+}
+
+header div.header_text p {
+    font-size: calc(1.2rem + 0.5vw);
+    margin-top: 2rem;
+}
+
+
+/* Main */
+main{
+    position: relative;
+    width: 100%;
+}
+
+section{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+
+/* Separator section*/
+div.separator{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.separator hr{
+    height: 0.1rem;
+    width: 30%;
+    background: #5C3D2E;
+    border: 1px solid #5C3D2E;
+}
+
+div.separator h2{
+    font-size: calc(1.3rem + 2vw);
+}
+
+/*Section Nos Valeurs*/
+div.section_valeurs{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+div.valeur_article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem 0;
+    
+}
+
+div.valeur_article h3{
+    font-size: 2.2rem;
+    margin: 1.5rem 0 1rem;
+}
+
+div.valeur_article p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+div.valeur_article .icon{
+    width: 15rem;
+    height: 15rem;
+}
+
+div.valeur_article .icon_engagement{
+    fill:#45A42D;
+
+}
+
+div.valeur_article .icon_conviviale{
+    fill:#CE501B;
+
+}
+
+
+/*Section Nos Gourmandises*/
+div.section_cercle_produits{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+p.para_gourmand {
+    font-size: 1.5rem;
+    margin: 3rem auto;
+    width: 80%;
+
+}
+
+div.cercle_produit{
+    border: 3px solid #8E8E8E;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+div.cercle_produit h4{
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+
+div.cercle_produit img{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 0.75rem;
+}
+
+div.cercle_produit h4.muffins {
+    margin-top: 0.75rem;
+}
+
+div.gourmandises>img{
+    border-radius: 1rem;
+    max-width: 60rem;
+    width: 65%;
+    margin: 1rem 0;
+}
+
+
+/*Section Localisation*/
+
+div.localisation{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+div.card{
+    background-color: #5C3D2E;
+    border-radius: 1rem;
+    box-shadow: 4px 8px 27px 0px rgba(0,0,0,0.66);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    
+
+}
+
+
+div.card .title_card h3{
+    padding: 1rem 0;
+    font-size: calc(2rem + 1vw);
+}
+
+div.card .informations_coffee>div{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+
+div.card .informations_coffee ul{
+    padding: 1rem 0;
+    list-style: none;
+}
+
+div.card .informations_coffee li{
+    padding: 0.3rem 0;
+}
+
+.map{
+    display: none;
+}
+
+
+@media screen and (min-width: 769px){
+
+    /* Section Nos Valeurs */
+    div.section_valeurs{
+        width: 80vw;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    div.valeur_article .icon{
+        width: calc(2rem + 15vw);
+        height: 15rem;
+    }
+
+    div.valeur_article h3{
+        font-size: calc(1.5rem + 1vw);
+
+    }
+
+    div.valeur_article p{
+        font-size: calc(0.5rem + 1vw);
+    }
+    
+    /* Section Nos Gourmandises */
+
+    div.gourmandises{
+        display: flex;
+        width: 80vw;
+        margin: 0 auto;
+        
+    }
+    p.para_gourmand {
+        font-size: calc(0.5rem + 1vw);
+    
+    }
+
+    div.gourmandises>img{
+        width: 50%;
+        height: 20%;
+        margin-left: 1rem;
+    }
+
+    div.cercle_produit{
+        width: calc(2.5rem + 10vw);
+        height: calc(2.5rem + 10vw);
+    }
+
+    div.cercle_produit img{
+        width: calc(2rem + 6vw);
+        height: calc(2rem + 6vw);
+        margin-top: 0.2rem;
+    }
+
+
+    div.cercle_produit h4{
+        font-size: calc(0.7rem + 0.5vw);
+        width: 50%;
+    }
+
+    div.cercle_produit h4.muffins {
+        margin-top: 0.5rem;
+    }
+
+    /* Section Localisation Media */
+    
+    div.card{
+        width: 40%;
+    }
+
+    .map{
+        display: block;
+        margin: 2rem;
+        width: 40vw;
+        height: 40vw;
+        
+    }
+
+    div.card .informations_coffee>div{
+        font-size: calc(1rem + 1vw);
+    }
+
+
+}
