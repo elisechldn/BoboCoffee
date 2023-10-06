@@ -24,7 +24,7 @@
     </header>
 
 
-    <main>
+    <main class="mainPageAccueil">
 
     <section class="valeurs">
         <div class="separator">
