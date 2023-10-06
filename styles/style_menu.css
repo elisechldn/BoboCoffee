@@ -1,5 +1,16 @@
 /* SECTION */
 
+
+
+footer {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 98%;
+}
+
+html {
+  height: 100%;
+}
 .menuPage{
   display: flex;
   flex-direction: column;
