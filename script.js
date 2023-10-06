@@ -19,7 +19,7 @@ const darkmode = document.querySelector(".darkmodebtn");
 
 darkmode.addEventListener("click", function () {
     document.body.classList.toggle("darkmode");
-    document.querySelectorAll("input, select, .centerCircle, .darkmodebtn, .motdefin, .profilEquipe h1, footer, section > h2, .shopText").forEach (element => {
+    document.querySelectorAll("input, select, textarea, .centerCircle, .darkmodebtn, .motdefin, .profilEquipe h1, footer, section > h2, .shopText").forEach (element => {
         element.classList.toggle("darkmode");
     }) 
 });
