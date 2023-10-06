@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bobo Coffee</title>
 </head>
 
 <body>
@@ -40,13 +40,13 @@
     <div>
         <label for="heure">Heure :</label>
         <select name="heure" id="heure" required>
-        <option value="" disabled selected hidden>Heure de passage.</option>
-        <option value="12:00">12:00</option>
-        <option value="12:15">12:15</option>
-        <option value="12:30">12:30</option>
-        <option value="12:45">12:45</option>
-        <option value="13:00">13:00</option>
-        <option value="Autre">hors de ces horaires</option>
+            <option value="" disabled selected hidden>Heure de passage.</option>
+            <option value="12:00">12:00</option>
+            <option value="12:15">12:15</option>
+            <option value="12:30">12:30</option>
+            <option value="12:45">12:45</option>
+            <option value="13:00">13:00</option>
+            <option value="Autre">hors de ces horaires</option>
         </select>
     </div>
 
@@ -72,11 +72,13 @@
 </div>
 
 
-<button class="bouton" onclick="messageFR()" type="submit">Réserver</button>
+<button class="bouton" onclick="messageFRReservation()" type="submit">Réserver</button>
 
 
     </form>
 </main>
+
+<?php include'footer.php' ?>
 </body>
 <script src="script.js"></script>
 </html>

@@ -14,6 +14,7 @@
     <body>
         <?php include"navbar.php";?>
 
+        <main>
     <form action="" id="contactForm" method= "POST">
         <h2>Formulaire de contact</h2>
         <hr>
@@ -53,11 +54,14 @@
         </div>
 
 
-        <button onclick='messageFR()' type="submit">Envoyer le formulaire</button>
+        <button onclick='messageFRContact()' type="submit">Envoyer le formulaire</button>
         
 
 
     </form>
+    </main>
+
+    <?php include'footer.php'; ?>
 </body>
 <script src='script.js'></script>
 </html>

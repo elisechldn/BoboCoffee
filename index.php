@@ -9,7 +9,8 @@
 </head>
 <body>
 
-    <?php 
+    <?php
+        
         include 'navbar.php';
     ?>
 

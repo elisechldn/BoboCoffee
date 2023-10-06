@@ -1,9 +1,16 @@
+:root{
+    --primaryColor: #5C3D2E;
+    --secondaryColor: #B85C38;
+    --thirdColor: #E0C097;
+}
+
+
 /* Header */
 header{
     position: relative;
     width: 100%;
     margin: 2.6rem 0;
-    color: white;
+    color: var(--thirdColor);
 }
 
 header img{
@@ -40,6 +47,7 @@ header div.header_text p {
 main{
     position: relative;
     width: 100%;
+    color: var(--primaryColor)
 }
 
 section{
@@ -186,6 +194,7 @@ div.card{
     justify-content: space-around;
     align-items: center;
     width: 70%;
+    color: var(--thirdColor)
     
 
 }

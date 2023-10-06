@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<link rel="stylesheet" href="styles/style.css">
-<link rel="stylesheet" href="styles/styleresa.css">
+<link rel="stylesheet" href="../styles/style.css">
+<link rel="stylesheet" href="../styles/styleresa.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bobo Coffee</title>
 </head>
 
 <body>
-    <?php include"navbar.php";
+    <?php include"navbar_EN.php";
     ?>
 
     <main>
@@ -71,10 +71,12 @@
 </div>
 
 
-<button class="bouton" onclick="messageEN()" type="submit">Réserver</button>
+<button class="bouton" onclick="messageENReservation()" type="submit">Réserver</button>
 
     </form>
 </main>
+
+<?php include'footer_EN.php'; ?>
 </body>
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </html>

@@ -148,7 +148,7 @@ li {
   display: flex;
   flex: 0 0 100%;  
   background-color: none;
-  background-image: url(assets/photo\ carousel.png);
+  background-image: url("../assets/About_Us/FR/photo_carousel.png");
   background-repeat: no-repeat;
   background-position: 50% 30%;
   height: 100%;
@@ -156,7 +156,7 @@ li {
 }
 
 .carousel__slide:nth-child(2) {
-  background-image: url(assets/photo\ carousel\ slide\ 2.png);
+  background-image: url("../assets/About_Us/FR/photo_carousel_slide_2.png");
   background-repeat: no-repeat;
   background-position: 50% 30%;
   height: 100%
@@ -166,7 +166,7 @@ li {
 }
 
 .carousel__slide:nth-child(3) {
-  background-image: url(assets/photo\ carousel\ slide\ 3.png);
+  background-image: url("../assets/About_Us/FR/photo_carousel_slide_3.png");
   background-repeat: no-repeat;
   background-position: 50% 30%;
   height: 100%;
@@ -262,7 +262,7 @@ li {
   position: absolute;
   display: flex;
   margin-top: 3.075rem;  
-  background-image: url(assets/coffee-connection-internet-information-concept-boissons-modifiee-v4.jpg);
+  background-image: url("../assets/About_Us/Background_main_aboutus.jpg");
   background-position: top;
   background-size: cover;
   height: 80%;
@@ -301,7 +301,7 @@ li {
   
 }
 
-hr {
+section.profilEquipe hr {
   width: 40%;
   margin: 3rem auto;
   background-color: #f1efef;

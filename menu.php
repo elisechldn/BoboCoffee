@@ -14,29 +14,30 @@
   <?php include"navbar.php"; ?>
   <main>
     <div class="section">
-      <img class= "img-back" src="assets/image/image café.jpg">
+      <img class= "img-back" src="../assets/Menu/Images/image café.jpg">
       <div class="menuPage">
         <h1> notre menu</h1>
       <button>
         <h2>nos boissons fraiches </h2>
-        <img src="assets/image/coca-cola.jpeg">
+        <img src="../assets/Menu/Images/coca-cola.jpeg">
         </boutton>
         <button>
           <h2>nos boissons chaudes </h2>
-          <img src="assets/image/café.jpg">
+          <img src="../assets/Menu/Images/café.jpg">
         </button>
         <button>
           <h2>nos patisseries </h2>
-          <img src="assets/image/croissants.jpg">
+          <img src="../assets/Menu/Images/croissants.jpg">
         </button>
         <button>
           <h2>nos snacks </h2>
-          <img src="assets/image/hot-dogs.jpg">
+          <img src="../assets/Menu/Images/hot-dogs.jpg">
         </button>
       </div>
     </div>
   </main>
 
+  <?php include 'footer.php'?>
 </body>
 <script src="script.js"></script>
 

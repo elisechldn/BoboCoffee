@@ -10,7 +10,7 @@
 <body>
 
     <?php 
-        include '../navbar.php';
+        include '../pages_EN/navbar_EN.php';
     ?>
 
     <header>
@@ -119,7 +119,7 @@
     </section>
     </main>
 
-    <?php include '../footer.php'; ?>
+    <?php include 'footer_EN.php'; ?>
 </body>
 <script src="../script.js"></script>
 </html>

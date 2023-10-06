@@ -19,36 +19,36 @@ const darkmode = document.querySelector(".darkmodebtn");
 
 darkmode.addEventListener("click", function () {
     document.body.classList.toggle("darkmode");
-    document.querySelectorAll("input, select, .centerCircle, .darkmodebtn, .motdefin, .profilEquipe h1, footer").forEach (element => {
+    document.querySelectorAll("input, select, .centerCircle, .darkmodebtn, .motdefin, .profilEquipe h1, footer, section > h2, .shopText").forEach (element => {
         element.classList.toggle("darkmode");
     }) 
 });
 
-const message =
+const messageFR_Contact =
   "Merci d'avoir soumis votre demande. \nL'équipe Bobo Coffee y répondra très prochainement";
 
 function messageFRContact(){
-    alert(message);
+    alert(messageFR_Contact);
 } 
 
-  const message_EN =
+  const messageEN_Contact =
   "Thank you for submitting your request.\nThe Bobo Coffee crew will respond shortly.";
 
   function messageENContact(){
-    alert(message_EN);
+    alert(messageEN_Contact);
 } 
 
 
-const message =
+const messageFR_Reservation =
   "Merci d'avoir réservé chez nous.";
 
-function messageFR(){
-    alert(message);
+function messageFRReservation(){
+    alert(messageFR_Reservation);
 } 
 
-  const message_EN =
+  const messageEN_Reservation =
   "Thanks for your reservation.";
 
   function messageENResevation(){
-    alert(message_EN);
+    alert(messageEN_Reservation);
 }

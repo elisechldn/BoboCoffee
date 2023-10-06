@@ -17,13 +17,10 @@
   border: none;
 }
 
-*{-ms-overflow-style: none;
-}
-
 *{
   box-sizing: border-box;
   scrollbar-color: transparent transparent;
-  
+  -ms-overflow-style: none;
   scrollbar-width: 0px;
   
   }
@@ -73,7 +70,7 @@ margin-left:3em;
 .shopText{
     text-align:center;
     padding: 3rem;
-    color: var(--secondary);
+    color: var(--primary);
     font-size: 1.5em;
   }
 
@@ -135,6 +132,11 @@ section > h2{
 
 /*grid dernière section*/
 
+div.content_products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .wrapper {
     height: 420px;
     width: 654px;
@@ -263,3 +265,9 @@ Reste à centrer un peu plus la division.
       margin: 20px;
     }
 }
+
+/*Darkmode*/
+section>h2.darkmode, .shopText.darkmode{
+  color: var(--secondary);
+}
+

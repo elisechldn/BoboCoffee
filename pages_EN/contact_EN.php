@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="styles/style_contact.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style_contact.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 
     <body>
-        <?php include"navbar.php";?>
-
+        <?php include"navbar_EN.php";?>
+<main>
     <form action="" id="contactFormEN" method= "POST">
         <h2>Contact Form</h2>
         <hr>
@@ -57,6 +57,8 @@
 
 
     </form>
+</main>
+<?php include 'footer_EN.php'?>
 </body>
 <script src='script.js'></script>
 </html>

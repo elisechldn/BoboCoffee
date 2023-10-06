@@ -4,34 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bobo Coffee - votre coffeeshop et torréfacteur préféré</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="boutique.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/style_boutique.css" rel="stylesheet">
 </head>
 
-<?php include ('tableauproduits.php') ?>
+<?php include ('tableauproduits.php'); ?>
 
 <body>
-    <nav>
-        <div class="navleft">
-            <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Réservation</a></li>
-            </ul>
-        </div>
-
-        <div class="centerCircle">
-            <img src="images/logo_sans_fond_v2.png" class="logo" alt="Tasse de café cerclée 
-            du nom de la boutique et de sa date de création.">
-        </div>
-        <div class="navright">
-            <ul>
-                <li><a href="">La boutique</a></li>
-                <li><a href="">L'équipe</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <?php include'navbar.php' ?>
 
     <main>
         <section>
@@ -65,10 +45,11 @@
 
         <section>
             <h2>Nos produits</h2>
+            <div class="content_products">
             <?php foreach($products as $product){ ?>
             <article class="wrapper">
                 <div class="product-img">
-                    <img src="assets/<?= $product['photo']?>" height="420" width="327">
+                    <img src="../assets/Boutique/Articles/<?= $product['photo']?>" height="420" width="327">
                 </div>
 
                 <div class="product-info">
@@ -83,12 +64,11 @@
                 </div>
             </article>
             <?php } ?>
+        </div>
         </section>
     </main>
 
-<!-- <footer>
-<div class="centerCircleFoot"><img src="images/logo_sans_fond_v2.png" class="logo"></div>
-</footer> -->
-<script href="script.js"></script>
+<?php include'footer.php' ?>
+<script src="script.js"></script>
 </body>
 </html>
