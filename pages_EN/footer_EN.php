@@ -8,7 +8,7 @@
         <hr class="barre1">
 
         <div class="mail">
-            <a href="#">
+            <a href="contact_EN.php">
                 <img class="iconeMail" src="../assets/Commun/Footer/icons/Icone_Courrier.svg" alt="mail">
                 <h4 class="mailFooter">Contact-us</h4>
             </a>
