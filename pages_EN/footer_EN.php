@@ -3,7 +3,7 @@
     <div class="contentInfos">
         <div class="horaires">
             <h4>Our Opening hours</h4>
-            <p>Monday to friday : 08am / 07pm — Saturday and Sunday : 09:30am / 07pm</p>
+            <p>Monday to friday : 08am / 07pm <br> Saturday and Sunday : 09:30am / 07pm</p>
         </div>
         <hr class="barre1">
 
