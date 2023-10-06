@@ -1,15 +1,11 @@
 body {
 
   align-items: center;
-  min-height: 250px;
   background-image: url("../assets/Contact/main_contact.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  padding-bottom: 10rem;
-  height: 100vh;
-  position: sticky;
-  top: 0;
+  height: 100%;
 }
 
 main{
@@ -114,6 +110,10 @@ form button {
   border-radius: 7px;
   border: none;
   font-family: 'Roboto', sans-serif;
+}
+
+footer{
+  margin-top: 22%;
 }
 
 @media screen and (max-width: 768px)  {

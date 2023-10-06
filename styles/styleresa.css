@@ -4,11 +4,15 @@
     box-sizing: 0;
 }
 
+body{
+    height: 100%;
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5rem 0;
+    margin: 5rem auto;
 }
 
 form {
@@ -131,7 +135,10 @@ input:focus {
       inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
   
+footer{
+    margin-top: 20%;
 
+}
 
 
   /*Media Query*/
