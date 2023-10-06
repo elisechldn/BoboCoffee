@@ -56,7 +56,7 @@ margin-left:3em;
     gap: 1.5rem;
     align-items: center;
     justify-content: center;
-    background-image: url(assets/3.png);
+    background-image: url("../assets/3.png");
     background-size: cover;
     opacity:0.5;
     width: 100%;
@@ -70,7 +70,7 @@ margin-left:3em;
 .shopText{
     text-align:center;
     padding: 3rem;
-    color: var(--primary);
+    color: var(--secondary);
     font-size: 1.5em;
   }
 
