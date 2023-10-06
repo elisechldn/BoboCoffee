@@ -23,7 +23,7 @@ body {
 
 /*DarkMode*/
 .darkmode {
-    background-color: #493A3A !important;    
+    background-color: #493A3A;    
 }
 
 
@@ -43,13 +43,13 @@ input.darkmode {
 }
 
 input.darkmode:-webkit-autofill {
-        background-color: #E0C097;
+        background-color: #E0C097 !important;
         color: black;
         transition: background-color 600000s 0s, color 600000s 0s;
 }
 
 input:-webkit-autofill {
-    background-color: #E0C097;
+    background-color: #E0C097 !important;
     color: white;
     transition: background-color 600000s 0s, color 600000s 0s;
 }
