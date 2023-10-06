@@ -163,7 +163,7 @@ div.content_products{
     height: 100%;
     width: 50%;
     border-radius: 0 7px 10px 7px;
-    background-color: #ffffff;
+    background-color: #efebeb;
   }
   
   .product-text {
@@ -182,7 +182,7 @@ div.content_products{
     height: 18vh;
     margin: 0 5px 0 38px;
     padding-right:5px;
-    color: #8d8d8d;
+    color: var(--primary);
     line-height: 1.7em;
     font-size: 1em;
     font-weight: lighter;
@@ -267,7 +267,7 @@ Reste à centrer un peu plus la division.
 }
 
 /*Darkmode*/
-section>h2.darkmode, .shopText.darkmode{
+section>h2.darkmode{
   color: var(--secondary);
 }
 

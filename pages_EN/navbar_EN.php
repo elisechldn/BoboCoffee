@@ -8,7 +8,7 @@
                 <li><a href="reservation_EN.php">Reservation</a></li>
             </ul>
             <ul class="menuRight">
-                <li><a href="#">Shop</a></li>
+                <li><a href="boutique_EN.php">Shop</a></li>
                 <li><a href="aboutus_EN.php">Crew</a></li>
                 <li><a href="contact_EN.php">Contact</a></li>
             </ul>
