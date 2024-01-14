@@ -7,6 +7,6 @@ L’enseigne de café parisien fictif, Bobo Coffee, située dans le 17e arrondis
 Il fallait mettre en valeur deux aspects de la boutique ; le coin restauration ainsi que la partie torréfaction du café. 
 Le site a été conçu pour mettre en avant la démarche écologique de la boutique, mais également son rapport à l’humain en présentant son équipe de barista. 
 
-<h2>STACKS UTILISÉS</h2> 
+<h2>STACKS UTILISÉES</h2> 
 
 HTML5 - CSS3 - PHP - JavaScript
